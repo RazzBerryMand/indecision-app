@@ -18,15 +18,21 @@ const template = (
 
 let count = 0;
 const addOne = () => {
-    console.log("addOne fired")
+    count++;
+    renderCounterApp();
 };
 const minusOne = () => {
-    console.log("minusOne fired")
+    count--;
+    renderCounterApp();
 };
 const reset = () => {
-    console.log("reset fired")
+    count = 0;
+    renderCounterApp();
 };
 
+const appRoot = document.getElementById("app");
+
+const renderCounterApp = () => {
 const templateTwo = (
 <div>
 <h1>Count: {count}</h1>
@@ -36,7 +42,7 @@ const templateTwo = (
 </div>
 );
 
-
-const appRoot = document.getElementById("app");
-
 ReactDOM.render(templateTwo, appRoot);
+};
+
+renderCounterApp();
