@@ -29,9 +29,8 @@ const makeDecision = () => {
 
 const appRoot = document.getElementById("app");
 
-
 const renderOptionsApp = () => {
-
+    
     const template = (
         <div>
         <h1>{app.title}</h1>
