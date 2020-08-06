@@ -20,12 +20,16 @@ var IndecisionApp = function (_React$Component) {
   _createClass(IndecisionApp, [{
     key: "render",
     value: function render() {
+      var title = "Indecision";
+      var subtitle = "Put your life in the hands of a computer";
+      var options = ["Thing one", "Thing two", "Thing three"];
+
       return React.createElement(
         "div",
         null,
-        React.createElement(Header, null),
+        React.createElement(Header, { title: title, subtitle: subtitle }),
         React.createElement(Action, null),
-        React.createElement(Options, null),
+        React.createElement(Options, { options: options }),
         React.createElement(AddOption, null)
       );
     }
@@ -52,12 +56,12 @@ var Header = function (_React$Component2) {
         React.createElement(
           "h1",
           null,
-          "Indecision"
+          this.props.title
         ),
         React.createElement(
           "h2",
           null,
-          "Put your life in the hands of a computer"
+          this.props.subtitle
         )
       );
     }
@@ -111,7 +115,7 @@ var Options = function (_React$Component4) {
         React.createElement(
           "h1",
           null,
-          "Options here"
+          this.props.options.length
         ),
         React.createElement(Option, null)
       );
@@ -176,4 +180,3 @@ var AddOption = function (_React$Component6) {
 }(React.Component);
 
 ReactDOM.render(React.createElement(IndecisionApp, null), document.getElementById("app"));
-ReactDOM.render(React.createElement(Option, null), React.createElement(IndecisionApp, null));
