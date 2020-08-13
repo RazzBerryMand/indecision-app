@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 const Option = (props) => {
   return (
@@ -9,7 +9,7 @@ const Option = (props) => {
           props.handleDeleteOption(props.optionText);
         }}
       >
-        Remove
+        remove
       </button>
     </div>
   );

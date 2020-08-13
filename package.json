@@ -2,7 +2,6 @@
   "name": "indecision-app",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "https://github.com/MandSolo/indecision-app.git",
   "author": "Mand Cashin",
   "license": "MIT",
   "scripts": {
@@ -11,21 +10,17 @@
     "dev-server": "webpack-dev-server"
   },
   "dependencies": {
-    "@babel/core": "^7.11.1",
-    "@babel/preset-env": "^7.11.0",
-    "@babel/preset-react": "^7.10.4",
-    "babel-core": "^6.26.3",
-    "babel-loader": "^8.1.0",
+    "babel-cli": "6.24.1",
+    "babel-core": "6.25.0",
+    "babel-loader": "7.1.1",
+    "babel-plugin-transform-class-properties": "6.24.1",
     "babel-preset-env": "1.5.2",
     "babel-preset-react": "6.24.1",
-    "live-server": "^1.2.1",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "validator": "^13.1.1",
-    "webpack": "^4.44.1",
-    "webpack-dev-server": "^3.11.0"
-  },
-  "devDependencies": {
-    "webpack-cli": "^3.3.12"
+    "live-server": "^1.2.0",
+    "react": "15.6.1",
+    "react-dom": "15.6.1",
+    "validator": "8.0.0",
+    "webpack": "3.1.0",
+    "webpack-dev-server": "2.5.1"
   }
 }
